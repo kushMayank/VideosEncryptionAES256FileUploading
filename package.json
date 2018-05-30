@@ -1,0 +1,29 @@
+{
+  "name": "videosencryptionaes256",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "babel-node": "babel-node --presets=latest",
+    "build": "babel src -d dist",
+    "start": "nodemon --exec npm run babel-node -- ./index.js",
+    "mocha": "mocha --compilers js:babel-register",
+    "test": "mocha --compilers js:babel-register --recursive app.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.4"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  }
+  ,
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  }
+}
